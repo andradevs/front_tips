@@ -1,9 +1,10 @@
 import { createContext, useContext, useState } from 'react';
-import { ThemeProvider as Theme, DefaultTheme } from 'styled-components';
+import { ThemeProvider as Theme } from 'styled-components';
 import themes from '../themes/themes';
 
 interface IContext {
   toggleTheme(): void;
+  theme: 'light' | 'dark';
 }
 
 interface IProps {
@@ -28,7 +29,7 @@ export const ThemeProvider = ({ children }: IProps) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ toggleTheme }}>
+    <ThemeContext.Provider value={{ toggleTheme, theme }}>
       <Theme theme={themes[theme]}>{children}</Theme>
     </ThemeContext.Provider>
   );

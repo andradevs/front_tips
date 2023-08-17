@@ -1,12 +1,12 @@
 const themes = {
   dark: {
     //Colors
-    'primary-600': '#7e3ff2',
-    'primary-500': '#9056f4',
-    'primary-400': '#a16bf6',
-    'primary-300': '#b180f8',
-    'primary-200': '#bf95fa',
-    'primary-100': '#cdaafc',
+    'primary-100': '#7e3ff2',
+    'primary-200': '#9056f4',
+    'primary-300': '#a16bf6',
+    'primary-400': '#b180f8',
+    'primary-500': '#bf95fa',
+    'primary-600': '#cdaafc',
     'on-primary': '#000000',
     'on-primary-100': '#FAFAFA',
     'surface-100': '#333333',
